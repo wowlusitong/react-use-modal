@@ -1,6 +1,13 @@
 # react-use-modal
 
-使用 `react-use-modal` 能以更方便的方式调用 modal 组件，比如 [react-bootstrap](https://react-bootstrap.github.io/components/modal/)， [antd](https://github.com/ant-design/ant-design)
+主流modal大多需要在组件内使用state控制是否显示，在多个地方调用的时候很不方便，所以基于 [context](https://reactjs.org/docs/context.html#api) 提供一个更加易用的组件。
+
+`react-use-modal` 支持主流的modal, 理论上只要modal通过类似于 `show props` 控制显示的，就可以支持，例如:
+- [antd](https://github.com/ant-design/ant-design)
+- [react-bootstrap](https://react-bootstrap.github.io/components/modal/)
+- [react-overlays](https://github.com/react-bootstrap/react-overlays)
+- [react-modals](https://github.com/reactjs/react-modal)
+- [material-ui](https://material-ui.com/utils/modal/)
 
 ## 安装
 
@@ -63,7 +70,12 @@ Product.contextType = ModalContext
 
 #### showModal
 显示modal，将 `show` 设置为true
-`showModal`需传递一个组件, 组件props包含show属性
+
+`showModal`的参数是想要显示的modal组件
+
+Name|Type|Default|Description
+-|-|-|-
+show|boolean|false|是否显示modal
 
 #### closeModal
 关闭modal，将 `show` 设置为false
