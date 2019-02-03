@@ -71,7 +71,16 @@ Product.contextType = ModalContext
 #### showModal
 显示modal，将 `show` 设置为true
 
-`showModal`的参数是想要显示的modal组件
+`showModal`需要传递一个组件作为参数
+```js
+showModal(props => (
+  <Modal show={show} onHide={closeModal}>
+    <Modal.Body>body</Modal.Body>
+  </Modal>
+))
+```
+
+组件props
 
 Name|Type|Default|Description
 -|-|-|-
