@@ -1,6 +1,6 @@
 # react-use-modal
 
-主流modal大多需要在组件内使用state控制是否显示，在多个地方调用的时候很不方便，所以基于 [context](https://reactjs.org/docs/context.html#api) 提供一个更加易用的组件。
+主流modal大多需要在组件内使用state控制是否显示，在多个地方调用的时候很不方便，所以基于 [context](https://reactjs.org/docs/context.html#api) 提供一个更加易用的调用方式。
 
 `react-use-modal` 支持主流的modal, 理论上只要modal通过类似于 `show props` 控制显示的，就可以支持，例如:
 - [antd](https://github.com/ant-design/ant-design)
