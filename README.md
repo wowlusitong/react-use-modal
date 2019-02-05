@@ -39,12 +39,14 @@ ReactDOM.render(
   document.querySelector('#root')
 )
 ```
-组件内调用方式，以react-bootstrap举例
-```js
-import * as React from 'react';
+调用方式，以react-bootstrap举例
 
+使用context
+```js
+import React from 'react';
+
+import { Modal } from 'react-bootstrap';
 import { ModalContext } from 'react-use-modal';
-import {Modal} from 'react-bootstrap';
 
 export default class App extends React.Component {
 
@@ -64,6 +66,31 @@ export default class App extends React.Component {
   }
 }
 Product.contextType = ModalContext
+```
+使用hooks
+```js
+import React from 'react';
+import { Modal } from 'react-bootstrap';
+import { useModal } from 'react-use-modal';
+
+const Order = () => {
+  const { showModal, closeModal } = useModal();
+
+  function handleClick() {
+    showModal(({ show }) => (
+      <Modal show={show} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>123</Modal.Body>
+      </Modal>
+    ))
+  }
+
+  return (
+    <button onClick={handleClick}>modal</button>
+  )
+}
 ```
 
 ## API
