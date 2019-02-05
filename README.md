@@ -98,7 +98,9 @@ const Order = () => {
 #### showModal
 显示modal，将 `show` 设置为true
 
-`showModal`需要传递一个组件作为参数
+##### 参数
+component(?Function):
+第一次调用必须传递参数，再次调用可忽略
 ```js
 showModal(props => (
   <Modal show={show} onHide={closeModal}>

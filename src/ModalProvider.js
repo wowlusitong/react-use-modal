@@ -17,8 +17,12 @@ export default class ModalProvider extends React.Component {
   handleShow = (Modal) => {
     this.setState({
       show: true,
-      Modal
     })
+    if (Modal) {
+      this.setState({
+        Modal
+      })
+    }
   }
 
   render() {
