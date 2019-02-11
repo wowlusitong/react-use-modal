@@ -8,7 +8,10 @@
     "build": "rm -rf dist && babel src -d dist",
     "prepublish": "npm run build"
   },
-  "keywords": ["react", "modal"],
+  "keywords": [
+    "react",
+    "modal"
+  ],
   "author": "SitongLu",
   "license": "ISC",
   "description": "",
@@ -18,11 +21,11 @@
     "@babel/plugin-proposal-class-properties": "^7.3.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1"
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
   },
   "peerDependencies": {
-    "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1"
+    "react": ">=16.3",
+    "react-dom": ">=16.3"
   }
 }
