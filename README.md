@@ -27,11 +27,6 @@ $ npm install react-use-modal --save
 import ReactDOM from 'react-dom';
 import { ModalProvider } from 'react-use-modal';
 
-const App = () => (
-  <ModalProvider>
-    ...
-  </ModalProvider>
-)
 ReactDOM.render(
   <ModalProvider>
     ...
