@@ -68,7 +68,7 @@ import React from 'react';
 import { Modal } from 'react-bootstrap';
 import { useModal } from 'react-use-modal';
 
-const Order = () => {
+const App = () => {
   const { showModal, closeModal } = useModal();
 
   function handleClick() {
