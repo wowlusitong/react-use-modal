@@ -1,8 +1,8 @@
-# react-use-modal
+# use-modal
 
 主流modal大多需要在组件内使用state控制是否显示，在多个地方调用的时候很不方便，所以基于 [context](https://reactjs.org/docs/context.html#api) 提供一个更加易用的调用方式。
 
-`react-use-modal` 支持主流的modal, 理论上只要modal通过类似于 `show props` 控制显示的，就可以支持，例如:
+`use-modal` 支持主流的modal, 理论上只要modal通过类似于 `show props` 控制显示的，就可以支持，例如:
 - [antd](https://github.com/ant-design/ant-design)
 - [react-bootstrap](https://react-bootstrap.github.io/components/modal/)
 - [react-overlays](https://github.com/react-bootstrap/react-overlays)
@@ -13,11 +13,11 @@
 
 使用yarn
 ```
-$ yarn add react-use-modal
+$ yarn add use-modal
 ```
 或者用npm
 ```
-$ npm install react-use-modal --save
+$ npm install use-modal --save
 ```
 
 ## 使用
@@ -25,7 +25,7 @@ $ npm install react-use-modal --save
 将 `ModalProvider` 放在组件外层
 ```js
 import ReactDOM from 'react-dom';
-import { ModalProvider } from 'react-use-modal';
+import { ModalProvider } from 'use-modal';
 
 ReactDOM.render(
   <ModalProvider>
@@ -41,7 +41,7 @@ ReactDOM.render(
 import React from 'react';
 
 import { Modal } from 'react-bootstrap';
-import { ModalContext } from 'react-use-modal';
+import { ModalContext } from 'use-modal';
 
 export default class App extends React.Component {
 
@@ -75,9 +75,9 @@ const App = () => {
     showModal(({ show }) => (
       <Modal show={show} onHide={closeModal}>
         <Modal.Header closeButton>
-          <Modal.Title>heading</Modal.Title>
+          <Modal.Title>Modal title</Modal.Title>
         </Modal.Header>
-        <Modal.Body>123</Modal.Body>
+        <Modal.Body>Modal body text goes here.</Modal.Body>
       </Modal>
     ))
   }
