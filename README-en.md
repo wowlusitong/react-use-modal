@@ -112,3 +112,6 @@ Show|boolean|false| Whether to display modal
 
 #### closeModal
 Turn off modal and set `show` to false
+
+---
+by google translate
