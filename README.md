@@ -1,4 +1,4 @@
-# use-modal
+# react-use-modal
 
 主流modal大多需要在组件内使用state控制是否显示，在多个地方调用的时候很不方便，所以基于 [context](https://reactjs.org/docs/context.html#api) 提供一个更加易用的调用方式。
 
@@ -13,11 +13,11 @@
 
 使用yarn
 ```
-$ yarn add use-modal
+$ yarn add react-use-modal
 ```
 或者用npm
 ```
-$ npm install use-modal --save
+$ npm install react-use-modal --save
 ```
 
 ## 使用
@@ -25,7 +25,7 @@ $ npm install use-modal --save
 将 `ModalProvider` 放在组件外层
 ```js
 import ReactDOM from 'react-dom';
-import { ModalProvider } from 'use-modal';
+import { ModalProvider } from 'react-use-modal';
 
 ReactDOM.render(
   <ModalProvider>
@@ -41,7 +41,7 @@ ReactDOM.render(
 import React from 'react';
 
 import { Modal } from 'react-bootstrap';
-import { ModalContext } from 'use-modal';
+import { ModalContext } from 'react-use-modal';
 
 export default class App extends React.Component {
 

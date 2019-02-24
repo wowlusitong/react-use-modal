@@ -9,7 +9,7 @@
     "react-dom": "^16.8.2",
     "react-modal": "^3.8.1",
     "react-scripts": "2.1.5",
-    "use-modal": "^0.0.1"
+    "react-use-modal": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

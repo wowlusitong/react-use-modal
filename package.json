@@ -1,6 +1,6 @@
 {
-  "name": "use-modal",
-  "version": "0.0.1",
+  "name": "react-use-modal",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
