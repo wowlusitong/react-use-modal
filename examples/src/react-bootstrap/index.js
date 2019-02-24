@@ -1,6 +1,6 @@
 import React from 'react';
-import { Modal } from 'react-bootstrap';
-import { useModal } from 'use-modal';
+import { Modal, Button } from 'react-bootstrap';
+import { useModal } from 'react-use-modal';
 
 
 const ReactBootstrapModal = () => {
@@ -17,7 +17,7 @@ const ReactBootstrapModal = () => {
   }
 
   return (
-    <button onClick={handleClick}>open react-bootstrap modal</button>
+    <Button onClick={handleClick}>open react-bootstrap modal</Button>
   )
 }
 

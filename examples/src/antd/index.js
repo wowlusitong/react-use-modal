@@ -1,6 +1,6 @@
 import React from 'react';
-import { Modal } from 'antd';
-import { useModal } from 'use-modal';
+import { Modal, Button } from 'antd';
+import { useModal } from 'react-use-modal';
 
 const AntModal = () => {
   const { showModal, closeModal } = useModal();
@@ -18,7 +18,7 @@ const AntModal = () => {
   }
 
   return (
-    <button onClick={handleClick}>open antd modal</button>
+    <Button onClick={handleClick}>open antd modal</Button>
   )
 }
 
