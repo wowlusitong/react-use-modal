@@ -1,4 +1,4 @@
-# react-use-modal
+# react-use-modal &middot; [![npm](https://img.shields.io/npm/v/react-use-modal.svg?style=popout)](https://www.npmjs.com/package/react-use-modal) [![min](https://badgen.net/bundlephobia/min/react-use-modal)](https://bundlephobia.com/result?p=react-use-modal)
 
 简体中文 | [英文](https://github.com/wowlusitong/react-use-modal/blob/master/README-en.md)
 
