@@ -62,7 +62,7 @@ export default class App extends React.Component {
     )
   }
 }
-Product.contextType = ModalContext
+App.contextType = ModalContext
 ```
 使用hooks
 ```js
