@@ -5,36 +5,44 @@ import ModalContext from './context';
 export default class ModalProvider extends React.Component {
   state = {
     show: true,
-    Modal: null
+    Modal: null,
   }
 
   handleClose = () => {
     this.setState({
-      show: false
+      show: false,
     })
   }
 
   handleShow = (Modal) => {
     this.setState({
+      Modal,
       show: true,
     })
-    if (Modal) {
-      this.setState({
-        Modal
-      })
-    }
   }
 
   render() {
-    const { show, Modal } = this.state;
+    const { show, Modal } = this.state
+
+    const value = {
+      show,
+      showModal: this.handleShow,
+      closeModal: this.handleClose,
+    }
+
+    let renderModal = Modal
+    if (Modal) {
+      if (React.isValidElement(Modal)) {
+        renderModal = React.cloneElement(Modal, value)
+      } else {
+        renderModal = React.createElement(Modal, value)
+      }
+    }
+    
     return (
-      <ModalContext.Provider value={{
-        show,
-        showModal: this.handleShow,
-        closeModal: this.handleClose
-      }}>
+      <ModalContext.Provider value={value}>
         {this.props.children}
-        {Modal && <Modal show={show} />}
+        {renderModal}
       </ModalContext.Provider>
     )
   }
