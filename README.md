@@ -1,6 +1,6 @@
 # react-use-modal &middot; [![npm](https://img.shields.io/npm/v/react-use-modal.svg?style=popout)](https://www.npmjs.com/package/react-use-modal) [![min](https://badgen.net/bundlephobia/min/react-use-modal)](https://bundlephobia.com/result?p=react-use-modal)
 
-简体中文 | [英文](https://github.com/wowlusitong/react-use-modal/blob/master/README-en.md)
+简体中文 | [English](https://github.com/wowlusitong/react-use-modal/blob/master/README-en.md)
 
 主流modal大多需要在组件内使用state控制是否显示，在多个地方调用的时候很不方便，所以基于 [context](https://reactjs.org/docs/context.html#api) 提供一个更加易用的调用方式。
 
